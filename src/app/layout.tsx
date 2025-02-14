@@ -4,6 +4,12 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props
   return (
     <html suppressHydrationWarning>
+      <head>
+        <title>Admin Sanity</title>
+        <meta title="Admin Sanity" content="Testing Sanity"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+      </head>
+
       <body>
         <Provider>{children}</Provider>
       </body>
